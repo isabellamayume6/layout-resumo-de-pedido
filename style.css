@@ -10,37 +10,85 @@ html,body, section, img, main, h1, h2, div, p, a, input{
     color:hsl(223, 47%, 23%);;
 }
 
-section.topo img{
+main section.topo img{
     width: 100%;
-    height: 100%;
+    margin-bottom: 10%;
 }
-main h1 {
+main h1{
     text-align: center;
-    padding: 5%;
-    font-size: 24px;
-    font-weight: bold;
-    
+    font-size: 28px;
+    font-weight: 900;
+    margin-bottom: 5%;
 }
 main h2{
-text-align: center;
-font-size: 16px;
-margin-left: 10%;
-margin-right: 10%;
-color: hsl(224, 23%, 55%);
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    color: hsl(224, 23%, 55%);
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 5%;
 }
-main #anual-plan{
-    display: flex;
-    justify-content: center;
-    background-color: hsl(225, 100%, 98%);
+main div#anual-plan{
     margin-left: 5%;
     margin-right: 5%;
     height: 80px;
+    display: flex;
+    flex-direction: row;
     align-items: center;
-    padding-left: 5%;
-    padding-right: 5%;
-    margin-top: 10%;
+    flex-wrap: nowrap;
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 10px;
     margin-bottom: 10%;
 }
-main #anual-plan img{
+main div#anual-plan img{
+    margin-left: 5%;
+}
+main div#anual-plan p {
+    margin-left: 5%;
+}
+main div#anual-plan a {
     margin-right: 5%;
+    color: hsl(245, 75%, 52%);;
+}
+main input#azul{
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    height: 50px;
+    background-color: hsl(245, 75%, 52%);
+    color: white;
+    border-radius: 10px;
+    margin-bottom: 10%;
+    box-shadow: 0px 20px 20px hsl(225, 100%, 94%);
+    font-size: 16px;
+}
+main input{
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    background-color: white;
+    font-size: 16px;
+    color: hsl(224, 23%, 55%);
+}
+@media(min-width:1440px){
+    body{
+        background-color: hsl(225, 100%, 94%);
+        background-image: url(./images/pattern-background-desktop.svg);
+        background-repeat: no-repeat;
+    }
+    main{
+        background-color: white;
+        width: 400px;
+        height: 700px;
+        border: 2px solid black;
+        border-radius: 25px;
+        margin-left: 35%;
+        margin-right: 35%;
+        margin-top: 10%;
+    }
+    main section.topo img{
+        border-top-left-radius: 25px;
+        border-top-right-radius:25px;
+    }
 }
