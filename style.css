@@ -71,7 +71,7 @@ main input{
     font-size: 16px;
     color: hsl(224, 23%, 55%);
 }
-@media(min-width:1440px){
+@media(min-width:1024px){
     body{
         background-color: hsl(225, 100%, 94%);
         background-image: url(./images/pattern-background-desktop.svg);
@@ -85,7 +85,7 @@ main input{
         border-radius: 25px;
         margin-left: 35%;
         margin-right: 35%;
-        margin-top: 10%;
+        
     }
     main section.topo img{
         border-top-left-radius: 25px;
